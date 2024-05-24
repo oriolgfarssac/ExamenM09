@@ -1,0 +1,132 @@
+.titol{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px;
+}
+
+.image-container{
+    width: auto;
+}
+
+.image-container img{
+    width: 200px;
+    height: 133px;
+    transition: all 0.5s;
+}
+
+.image-container img:hover{
+    width: 400px;
+    height: 266px;
+}
+
+.img_Responsiva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.imgRes{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.css_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width:50px;
+	height: 50px;
+	text-align: center;
+	background-color:orange;
+    animation: animacioCuadrat 10s infinite;
+}
+
+@keyframes animacioCuadrat{
+
+    30%{
+	background-color:rgb(255, 251, 0);
+	width:50px;
+    height: 60px;   
+    transform: rotate(90deg);
+    }
+
+    50%{
+	background-color:rgb(4, 0, 255);
+	width:50px;
+    height: 80px;
+    transform: rotate(180deg);
+    }
+
+    70%{
+    background-color:rgb(81, 255, 0);
+    height: 80px;
+    width: 100px;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        width:50px;
+	    height: 50px;
+	    background-color:orange;
+    }
+}
+
+.videoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.videoContainer2{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+}
+
+.iconsNav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    background-color: rgb(91, 91, 91);
+}
+
+.videoButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    transition: all 0.3s;
+}
+
+.videoButton:active{
+    background-color: rgb(96, 145, 188);
+}
+
+.iconImg{
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.iconImg:active{
+    width: 80%;
+}

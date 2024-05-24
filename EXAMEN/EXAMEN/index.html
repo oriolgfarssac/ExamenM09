@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="CSS/style.css"> 
+		<title>Restaurant</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	</head>
+	<body>
+		<section>
+			<h3 class="titol">Galeria d'imatges</h3>
+			<div class="gallery">
+				<div class="image-container">
+					<img src="IMAGES/plat1.jpg" alt="Imatge plat de verdures">
+				</div>
+				<div class="image-container">
+					<img src="IMAGES/plat2.jpg" alt="Imatge plat despaguettis">
+				</div>
+				<div class="image-container">
+					<img src="IMAGES/optimitzacio_plat3.png" alt="Imatge plat de salmó amb verdures">
+				</div>
+			</div>
+		</section>
+		<section class="img_Responsiva">
+			<h1>Img Responsiva</h1>
+			<picture>
+				<source media="(max-width: 640px)" srcset="IMAGES/img_responsive2_640.png">
+				<source media="(max-width: 1024px)" srcset="./IMAGES/img_responsive2_1024.png">
+				<source media="(max-width: 1920px)" srcset="./IMAGES/img_responsive2.jpg">
+				<img src="./IMAGES/img_responsive2.jpg" class="imgRes">
+			</picture>
+		</section>
+		<section>
+			<h1>Animació</h1>
+			<div class="css_div">
+				Capa
+			</div>
+		</section>
+		<section class="videoContainer">
+			<h1>Video</h1>
+			<div class="videoContainer2">
+			<video src="./VIDEOS/video.mp4" id="video" autoplay muted></video>
+			<div class="iconsNav">
+					<a class="videoButton" onclick="playVideo()">
+						<img src="./ICONES/play_arrow_24dp_FILL0_wght400_GRAD0_opsz24.png" id="img" class="iconImg">
+					</a>
+					<a class="videoButton" onclick="pauseVideo()">
+						<img src="./ICONES/pause_24dp_FILL0_wght400_GRAD0_opsz24.png" id="img" class="iconImg">
+					</a>
+			</div>
+			</div>
+		</section>
+		<script src="main.js"></script>
+	</body>
+</html>
